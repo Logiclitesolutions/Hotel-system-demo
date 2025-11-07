@@ -1,0 +1,18 @@
+.featured-rooms h2 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+.room-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.room-img {
+  height: 220px;
+  object-fit: cover;
+}
