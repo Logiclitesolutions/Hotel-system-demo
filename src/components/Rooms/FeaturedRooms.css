@@ -1,18 +1,136 @@
-.featured-rooms h2 {
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
+
+/*Hotel Swiper Section */
+.hotel-swiper-section {
+  padding: 40px 80px; 
+  background: #ffffff;
+  margin-top: 40px;
+  font-family: "Raleway", sans-serif;
 }
 
-.room-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.swiper-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #333;
 }
 
-.room-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+.swiper-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
-.room-img {
-  height: 220px;
+
+/* Swiper Size */
+.hotel-swiper {
+  padding-bottom: 30px;
+}
+
+.hotel-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.hotel-card:hover {
+  transform: translateY(-6px);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 250px; 
   object-fit: cover;
+}
+
+.hotel-card h4 {
+  font-size: 18px;
+  margin: 10px 12px 5px;
+  font-weight: 600;
+}
+
+.hotel-card p {
+  font-size: 15px;
+  color: #555;
+  margin: 0 12px 12px;
+}
+
+/*Stats Background Section */
+.stats-section {
+  position: relative;
+  width: 100%;
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+.stats-background {
+  background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.4);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/*Stats Row Styling*/
+.stats-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 40px;
+}
+
+.stat-box h2 {
+  font-size: 52px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-box p {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* .stat-box {
+  text-align: center;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+} */
+
+
+.stat-box .plus {
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+
+/* Vertical Divider */
+.vertical-line {
+  width: 2px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
 }
