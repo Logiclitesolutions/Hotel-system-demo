@@ -8,7 +8,7 @@ import "./FeaturedRooms.css";
 
 const FeaturedRooms = () => {
   
-  // ⭐ SINGLE HOTEL ARRAY (NO DUPLICATE NOW)
+  //  SINGLE HOTEL ARRAY (NO DUPLICATE NOW)
   const hotels = [
     {
       name: "Royal Palace",
@@ -111,7 +111,7 @@ const FeaturedRooms = () => {
 }, []);
 
 
-  // ⭐ Function to convert rating → stars
+  //  Function to convert rating → stars
   const renderStars = (rating) => {
     const stars = Math.round(rating);
     return "⭐".repeat(stars);
@@ -155,7 +155,7 @@ const FeaturedRooms = () => {
         </Swiper>
       </section>
 
-      {/* 📌 STATS COUNTING SECTION */}
+      {/*  STATS COUNTING SECTION */}
 <section className="stats-section">
   <div className="stats-background"></div>
   <div className="stats-wrapper">
